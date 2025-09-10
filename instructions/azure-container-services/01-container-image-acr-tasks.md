@@ -151,6 +151,7 @@ Ensuite, vous générez et envoyez (push) une image basée sur un fichier Docker
 
 Maintenant que vous avez terminé l’exercice, vous devez supprimer les ressources cloud que vous avez créées pour éviter une utilisation inutile des ressources.
 
+1. Dans votre navigateur, accédez au portail Azure [https://portal.azure.com](https://portal.azure.com) et connectez-vous en utilisant vos informations d’identification Azure.
 1. Accédez au groupe de ressources que vous avez créé et affichez le contenu des ressources utilisées dans cet exercice.
 1. Dans la barre d’outils, sélectionnez **Supprimer le groupe de ressources**.
 1. Entrez le nom du groupe de ressources et confirmez que vous souhaitez le supprimer.
