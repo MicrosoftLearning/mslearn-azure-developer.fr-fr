@@ -181,8 +181,11 @@ Maintenant que l’application est terminée, il est temps de l’exécuter.
 
 ## Nettoyer les ressources
 
-Maintenant que vous avez terminé l’exercice, vous devez supprimer l’enregistrement de l’application que vous avez créé précédemment.
+Maintenant que vous avez terminé l’exercice, vous devez supprimer les ressources cloud que vous avez créées pour éviter une utilisation inutile des ressources.
 
-1. Dans le Portail Azure, accédez à la vue d’ensemble de l’enregistrement d’applications.
-1. Dans la barre d’outils, sélectionnez **Supprimer**.
-1. Confirmez la suppression.
+1. Dans votre navigateur, accédez au portail Azure [https://portal.azure.com](https://portal.azure.com) et connectez-vous en utilisant vos informations d’identification Azure.
+1. Accédez au groupe de ressources que vous avez créé et affichez le contenu des ressources utilisées dans cet exercice.
+1. Dans la barre d’outils, sélectionnez **Supprimer le groupe de ressources**.
+1. Entrez le nom du groupe de ressources et confirmez que vous souhaitez le supprimer.
+
+> **ATTENTION :** La suppression d’un groupe de ressources entraîne la suppression de toutes les ressources qu’il contient. Si vous avez choisi un groupe de ressources existant pour cet exercice, toutes les ressources existantes qui ne relèvent pas du champ d’application de cet exercice seront également supprimées.
