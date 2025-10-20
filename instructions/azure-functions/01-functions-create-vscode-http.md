@@ -63,6 +63,8 @@ Dans cette section, vous utilisez Visual Studio Code pour créer un projet Azure
 
     <sup>1</sup> En fonction de vos paramètres VS Code, il peut être nécessaire d’utiliser l’option **Change template filter** (Modifier le filtre de modèle) pour afficher la liste complète des modèles.
 
+1. Lorsque vous êtes invité à *Sélectionner la façon dont vous souhaitez ouvrir votre projet*, sélectionnez **Ouvrir dans la fenêtre actuelle**.
+
 1. Visual Studio Code utilise les informations fournies et génère un projet Azure Functions avec un déclencheur HTTP. Vous pouvez voir les fichiers de projet locaux dans l’Explorateur.
 
     > **Remarque** : Si VS Code affiche une fenêtre contextuelle avec le titre **Faites-vous confiance aux auteurs des fichiers dans ce dossier ?**, sélectionnez le bouton **Oui, je fais confiance aux auteurs**.
@@ -73,7 +75,11 @@ Visual Studio Code s’intègre à Azure Functions Core Tools pour vous permettr
 
 1. Vérifiez que le terminal est ouvert dans Visual Studio Code. Vous pouvez ouvrir le terminal en sélectionnant **Terminal**, puis **Nouveau terminal** dans la barre de menus. 
 
-1. Appuyez sur **F5** pour démarrer le projet d’application de fonction dans le débogueur. La sortie de Core Tools est affichée dans le panneau **Terminal**. Votre application démarre dans le panneau **Terminal**. Vous pouvez voir le point de terminaison de l’URL de votre fonction déclenchée par HTTP en cours d’exécution localement.
+1. Appuyez sur **F5** pour démarrer le projet d’application de fonction dans le débogueur. Si vous êtes invité à choisir un compte de stockage, sélectionnez **Ignorer pour le moment**.
+
+    ![Capture d’écran de la boîte de dialogue invitant à créer un compte de stockage.](./media/01/select-storage-acct.png)
+
+1. La sortie de Core Tools est affichée dans le panneau **Terminal**. Vous pouvez voir le point de terminaison de l’URL de votre fonction déclenchée par HTTP en cours d’exécution localement.
 
     ![Capture d’écran du point de terminaison de votre fonction déclenchée via HTTP qui s’affiche dans le panneau Terminal.](./media/01/run-function-local.png)
 
@@ -81,9 +87,9 @@ Visual Studio Code s’intègre à Azure Functions Core Tools pour vous permettr
 
     ![Capture d’écran montrant l’emplacement de l’étape Exécuter la fonction maintenant.](./media/01/execute-function-local.png)
 
-1. Dans **Entrer le corps de la demande**, tapez la valeur du corps du message de demande `{ "name": "Azure" }`. Appuyez sur **Entrée** pour envoyer ce message de demande à votre fonction. Quand la fonction s’exécute localement et retourne une réponse, une notification est générée dans Visual Studio Code.
+1. Dans **Entrer le corps de la requête**, vous pouvez voir la valeur du corps du message de requête pour `{ "name": "Azure" }`. Appuyez sur **Entrée** pour envoyer ce message de demande à votre fonction. Quand la fonction s’exécute localement et retourne une réponse, une notification est générée dans Visual Studio Code.
 
-    sélectionnez l’icône de cloche de notification pour afficher la notification. Les informations relatives à l’exécution de la fonction sont affichées dans le panneau **Terminal**.
+    Sélectionnez l’icône de cloche de notification pour afficher la notification. Les informations relatives à l’exécution de la fonction sont affichées dans le panneau **Terminal**.
 
 1. Appuyez sur **Maj+F5** pour arrêter Core Tools et déconnecter le débogueur.
 
@@ -154,7 +160,7 @@ Dans cette section, vous allez créer les ressources Azure dont vous avez besoin
 
     ![Capture d’écran de l’option Exécuter la fonction maintenant.](./media/01/execute-function-remote.png)
 
-1. Dans **Entrer le corps de la requête**, vous pouvez voir la valeur du corps du message de requête pour `{ "name": "Azure" }`. Appuyez sur Entrée pour envoyer ce message de demande à votre fonction.
+1. Dans **Entrer le corps de la requête**, vous pouvez voir la valeur du corps du message de requête pour `{ "name": "Azure" }`. Appuyez sur **Entrée** pour envoyer ce message de demande à votre fonction.
 
 1. Quand la fonction s’exécute dans Azure et retourne une réponse, une notification est générée dans Visual Studio Code. sélectionnez l’icône de cloche de notification pour afficher la notification.
 
