@@ -67,7 +67,7 @@ Dans cette section de l’exercice, vous allez créer les ressources nécessaire
     ```
     az appconfig create --location $location \
         --name $appConfigName \
-        --resource-group $resourceGroup
+        --resource-group $resourceGroup \
         --sku Free
     ```
 
